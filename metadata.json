@@ -1,0 +1,6 @@
+{
+  "name": "Amerald Group | Sourceways",
+  "description": "Official web platform for Amerald Group and Sourceways business divisions in Nigeria: Cooperative & Shareholding, Strategic Consulting, Protective Force Security, and HR Outsourcing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
