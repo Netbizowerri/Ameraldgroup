@@ -4,7 +4,7 @@ import { ArrowLeft } from 'lucide-react';
 
 export const NotFoundPage: React.FC = () => {
   return (
-    <section className="flex flex-1 items-center justify-center bg-slate-50 px-4 py-24">
+    <section className="pattern-white-architectural flex flex-1 items-center justify-center px-4 py-24">
       <div className="max-w-md text-center">
         <p className="font-display text-sm font-semibold text-[#D92B2B]">
           404 · Page Not Found

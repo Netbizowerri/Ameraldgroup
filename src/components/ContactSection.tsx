@@ -181,7 +181,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
   };
 
   return (
-    <section aria-labelledby="contact-heading" className="bg-slate-50 py-14 sm:py-16">
+    <section
+      aria-labelledby="contact-heading"
+      className="pattern-surface-lattice py-14 sm:py-16"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12">
           {/* Left Column: Published Contacts & Regional Offices */}
@@ -277,7 +280,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
           {/* Right Column: Formspree Lead Capture Form */}
           <div className="lg:col-span-7">
-            <div className="rounded-2xl border border-slate-200 bg-white p-6 sm:p-8">
+            <div className="pattern-white-panel rounded-2xl border border-slate-200 p-6 sm:p-8">
               <h3 className="font-display text-xl font-bold text-[#1B1464]">
                 Division &amp; Shareholding Inquiry Form
               </h3>

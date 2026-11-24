@@ -39,7 +39,7 @@ export const ShareholdingSection: React.FC = () => {
   return (
     <section
       aria-labelledby="shareholding-heading"
-      className="bg-white py-14 sm:py-16"
+      className="pattern-white-architectural py-14 sm:py-16"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
@@ -62,7 +62,7 @@ export const ShareholdingSection: React.FC = () => {
           {SHAREHOLDING_STEPS.map((item) => (
             <div
               key={item.step}
-              className="flex flex-col justify-between rounded-xl border border-slate-200 bg-slate-50 p-6"
+              className="flex flex-col justify-between rounded-xl border border-slate-200/90 bg-white/95 p-6 shadow-xs"
             >
               <div>
                 <div className="flex items-baseline justify-between border-b border-slate-200 pb-3">
@@ -87,7 +87,7 @@ export const ShareholdingSection: React.FC = () => {
         </div>
 
         {/* Interactive Share Unit Estimator */}
-        <div className="mt-10 rounded-2xl border border-slate-200 bg-[#1B1464] p-6 text-white sm:p-8 lg:p-10">
+        <div className="navy-card-pattern mt-10 rounded-2xl border border-slate-200 p-6 text-white sm:p-8 lg:p-10">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-center">
             <div className="lg:col-span-6">
               <p className="text-xs font-semibold tracking-wide text-slate-300">

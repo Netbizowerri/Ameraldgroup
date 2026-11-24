@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="mt-12 border-t border-[#1B1464]/10 bg-white/80 backdrop-blur-xl">
+    <footer className="pattern-white-architectural border-t border-[#1B1464]/10">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 border-b border-[#1B1464]/10 pb-10 md:grid-cols-12">
           {/* Brand Summary */}

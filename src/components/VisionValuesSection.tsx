@@ -6,7 +6,7 @@ export const VisionValuesSection: React.FC = () => {
     <section
       id="overview"
       aria-labelledby="overview-heading"
-      className="border-b border-slate-200 bg-white py-16 sm:py-20"
+      className="pattern-white-architectural border-b border-slate-200 py-16 sm:py-20"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Intro */}
@@ -24,7 +24,7 @@ export const VisionValuesSection: React.FC = () => {
 
         {/* Vision & Mission Two-Column Architectural Blocks */}
         <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-2">
-          <div className="rounded-xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
+          <div className="pattern-white-panel rounded-xl border border-slate-200 p-6 sm:p-8">
             <p className="text-xs font-semibold tracking-wide text-[#D92B2B]">
               01 · Our Vision
             </p>
@@ -36,7 +36,7 @@ export const VisionValuesSection: React.FC = () => {
             </p>
           </div>
 
-          <div className="rounded-xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
+          <div className="pattern-white-panel rounded-xl border border-slate-200 p-6 sm:p-8">
             <p className="text-xs font-semibold tracking-wide text-[#D92B2B]">
               02 · Our Mission
             </p>
@@ -69,7 +69,7 @@ export const VisionValuesSection: React.FC = () => {
             {CORE_VALUES.map((item) => (
               <div
                 key={item.number}
-                className="flex flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 transition-colors duration-150 hover:border-[#1B1464]/40"
+                className="flex flex-col justify-between rounded-xl border border-slate-200/90 bg-white/95 p-6 transition-colors duration-150 hover:border-[#1B1464]/40 hover:bg-white"
               >
                 <div>
                   <div className="flex items-baseline justify-between border-b border-slate-100 pb-3">
@@ -93,7 +93,7 @@ export const VisionValuesSection: React.FC = () => {
         </div>
 
         {/* Management Team & Multidisciplinary Expertise */}
-        <div className="mt-14 rounded-xl border border-slate-200 bg-[#1B1464] p-6 text-white sm:p-10">
+        <div className="navy-card-pattern mt-14 rounded-xl border border-slate-200 p-6 text-white sm:p-10">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-start">
             <div className="lg:col-span-5">
               <p className="text-xs font-semibold tracking-wide text-slate-300">

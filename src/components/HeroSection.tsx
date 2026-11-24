@@ -2,15 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ChevronRight } from 'lucide-react';
 import { BRAND_IMAGES, HERO_HIGHLIGHTS } from '../data/ameraldData';
+import { HeroPattern } from './HeroPattern';
 import { ImageWithFallback } from './ImageWithFallback';
 
 export const HeroSection: React.FC = () => {
   return (
     <section
       aria-labelledby="hero-heading"
-      className="-mt-14 border-b border-slate-200 bg-[#1B1464] pt-24 pb-12 text-white sm:-mt-16 sm:pt-28 sm:pb-16"
+      className="hero-pattern-navy relative -mt-14 overflow-hidden border-b border-slate-200 pt-24 pb-12 text-white sm:-mt-16 sm:pt-28 sm:pb-16"
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <HeroPattern variant="hero" />
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* 2-Column Balanced Split */}
         <div className="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-12 lg:gap-10">
           {/* Left Column: Core Proposition */}

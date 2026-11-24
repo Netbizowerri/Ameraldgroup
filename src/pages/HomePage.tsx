@@ -13,7 +13,7 @@ export const HomePage: React.FC = () => {
       {/* Business Divisions Directory */}
       <section
         aria-labelledby="home-divisions-heading"
-        className="border-b border-slate-200 bg-white py-16 sm:py-20"
+        className="pattern-white-architectural border-b border-slate-200 py-16 sm:py-20"
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
@@ -43,7 +43,7 @@ export const HomePage: React.FC = () => {
               <Link
                 key={division.id}
                 to={`/divisions/${division.id}`}
-                className="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition-colors duration-150 hover:border-[#1B1464]/45 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1B1464]"
+                className="group flex flex-col overflow-hidden rounded-xl border border-slate-200/90 bg-white/95 shadow-xs transition-all duration-150 hover:border-[#1B1464]/45 hover:bg-white hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1B1464]"
               >
                 <div className="aspect-[16/9] overflow-hidden border-b border-slate-200 bg-slate-100">
                   <ImageWithFallback
@@ -83,11 +83,11 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* Corporate Governance & Shareholding Summary */}
-      <section className="bg-slate-50 py-16 sm:py-20">
+      <section className="pattern-surface-lattice py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
             {/* Overview & Leadership Card */}
-            <div className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-7 sm:p-9">
+            <div className="pattern-white-panel flex flex-col justify-between rounded-2xl border border-slate-200 p-7 sm:p-9">
               <div>
                 <p className="text-xs font-semibold text-[#D92B2B]">
                   Vision &amp; Leadership
@@ -111,7 +111,7 @@ export const HomePage: React.FC = () => {
             </div>
 
             {/* Shareholding Card */}
-            <div className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-[#1B1464] p-7 text-white sm:p-9">
+            <div className="navy-card-pattern flex flex-col justify-between rounded-2xl border border-slate-200 p-7 text-white sm:p-9">
               <div>
                 <p className="text-xs font-semibold text-[#F87171]">
                   Sourceways Cooperative Ownership

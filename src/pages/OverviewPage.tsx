@@ -16,7 +16,7 @@ export const OverviewPage: React.FC = () => {
 
       <VisionValuesSection />
 
-      <section className="bg-slate-50 py-12">
+      <section className="pattern-surface-lattice py-12">
         <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 px-4 sm:flex-row sm:items-center sm:px-6 lg:px-8">
           <div>
             <h2 className="font-display text-xl font-bold text-[#1B1464]">

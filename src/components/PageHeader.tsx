@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
+import { HeroPattern } from './HeroPattern';
 
 interface PageHeaderProps {
   kicker: string;
@@ -16,8 +17,9 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
   currentPageLabel,
 }) => {
   return (
-    <section className="-mt-14 border-b border-slate-200 bg-[#1B1464] pt-24 pb-12 text-white sm:-mt-16 sm:pt-28 sm:pb-16">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="hero-pattern-navy relative -mt-14 overflow-hidden border-b border-slate-200 pt-24 pb-12 text-white sm:-mt-16 sm:pt-28 sm:pb-16">
+      <HeroPattern variant="subpage" />
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb */}
         <nav
           aria-label="Breadcrumb"

@@ -45,6 +45,55 @@
   background-attachment: fixed;
 }
 
+/* Deep Navy Hero Pattern — Architectural Grid, Precision Crosshairs & Brand Radial Depth */
+.hero-pattern-navy {
+  background-color: #1B1464;
+  background-image:
+    radial-gradient(ellipse 70% 60% at 12% 0%, rgba(79, 70, 229, 0.28), transparent 62%),
+    radial-gradient(ellipse 55% 55% at 92% 14%, rgba(217, 43, 43, 0.16), transparent 60%),
+    radial-gradient(ellipse 65% 50% at 50% 100%, rgba(17, 13, 66, 0.72), transparent 68%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%23FFFFFF' stroke-opacity='0.065' stroke-width='1'%3E%3Cpath d='M64 0H0v64'/%3E%3C/g%3E%3Cg stroke='%23FFFFFF' stroke-opacity='0.18' stroke-width='1'%3E%3Cpath d='M0 0v6M0 0h6M64 0h-6'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: auto, auto, auto, 64px 64px;
+}
+
+/* Deep Navy Feature Card Pattern — Refined Diagonal Guilloche Weave */
+.navy-card-pattern {
+  background-color: #1B1464;
+  background-image:
+    radial-gradient(ellipse 65% 75% at 95% 5%, rgba(217, 43, 43, 0.15), transparent 58%),
+    radial-gradient(ellipse 60% 70% at 10% 100%, rgba(17, 13, 66, 0.65), transparent 65%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill='none' stroke='%23FFFFFF' stroke-opacity='0.06' stroke-width='1'%3E%3Cpath d='M0 40L40 0M-10 10L10 -10M30 50L50 30'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: auto, auto, 40px 40px;
+}
+
+/* Pure White Surface Pattern — Crisp Architectural Blueprint Dots & Micro-Crosshairs */
+.pattern-white-architectural {
+  background-color: #FFFFFF;
+  background-image:
+    radial-gradient(ellipse 55% 45% at 96% 8%, rgba(27, 20, 100, 0.045), transparent 62%),
+    radial-gradient(ellipse 45% 45% at 4% 92%, rgba(217, 43, 43, 0.032), transparent 60%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%231B1464' fill-opacity='0.085'%3E%3Ccircle cx='12' cy='12' r='1'/%3E%3Ccircle cx='36' cy='12' r='1'/%3E%3Ccircle cx='12' cy='36' r='1'/%3E%3Ccircle cx='36' cy='36' r='1'/%3E%3C/g%3E%3Cg stroke='%231B1464' stroke-opacity='0.12' stroke-width='1'%3E%3Cpath d='M24 21v6M21 24h6'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: auto, auto, 48px 48px;
+}
+
+/* Soft Light Surface Pattern — Institutional Diamond Lattice for Alternating Light Sections */
+.pattern-surface-lattice {
+  background-color: #F8FAFC;
+  background-image:
+    radial-gradient(ellipse 60% 50% at 8% 12%, rgba(27, 20, 100, 0.04), transparent 62%),
+    radial-gradient(ellipse 50% 45% at 92% 88%, rgba(217, 43, 43, 0.03), transparent 60%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44'%3E%3Cg fill='none' stroke='%231B1464' stroke-opacity='0.055' stroke-width='1'%3E%3Cpath d='M22 0L44 22L22 44L0 22Z'/%3E%3C/g%3E%3Ccircle cx='22' cy='22' r='1.1' fill='%23D92B2B' fill-opacity='0.11'/%3E%3C/svg%3E");
+  background-size: auto, auto, 44px 44px;
+}
+
+/* Crisp White Surface Accent — Subtle Corner Emblem Arcs for Elevated White Panels */
+.pattern-white-panel {
+  background-color: #FFFFFF;
+  background-image:
+    radial-gradient(circle at 100% 0%, rgba(27, 20, 100, 0.04) 0%, rgba(27, 20, 100, 0.04) 140px, transparent 141px),
+    radial-gradient(circle at 100% 0%, rgba(27, 20, 100, 0.025) 0%, rgba(27, 20, 100, 0.025) 220px, transparent 221px);
+}
+
 /* Frosted Light Glassmorphism Surfaces (UI/UX Pro Max: >=80% white opacity for WCAG AA/AAA text legibility) */
 .glass-nav {
   background: rgba(255, 255, 255, 0.82);
