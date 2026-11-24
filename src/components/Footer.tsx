@@ -12,32 +12,38 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="border-t border-slate-200 bg-[#110D42] text-slate-300">
+    <footer className="mt-12 border-t border-[#1B1464]/10 bg-white/80 backdrop-blur-xl">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 border-b border-white/15 pb-10 md:grid-cols-12">
+        <div className="grid grid-cols-1 gap-8 border-b border-[#1B1464]/10 pb-10 md:grid-cols-12">
           {/* Brand Summary */}
           <div className="md:col-span-5">
-            <Link to="/" className="inline-flex items-center gap-3">
-              <AmeraldLogo size={36} />
-              <span className="font-display text-lg font-bold text-white">
+            <Link
+              to="/"
+              className="group inline-flex cursor-pointer items-center gap-3"
+            >
+              <AmeraldLogo
+                size={36}
+                className="transition-transform duration-150 group-hover:scale-105"
+              />
+              <span className="font-display text-lg font-bold text-[#1B1464]">
                 {COMPANY_INFO.groupName}
               </span>
             </Link>
-            <p className="mt-4 max-w-md text-sm leading-relaxed text-slate-300">
+            <p className="mt-4 max-w-md text-sm leading-relaxed text-slate-600">
               Sourceways Cooperative, Sourceways Consulting Services Concept Nigeria Limited, Sourceways Protective Force Nigeria Ltd., and FMR Agency HR Outsourcing.
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="md:col-span-3">
-            <h3 className="font-display text-sm font-bold text-white">
+            <h3 className="font-display text-sm font-bold text-[#1B1464]">
               Site Pages
             </h3>
-            <ul className="mt-3 space-y-2 text-sm">
+            <ul className="mt-3 space-y-2.5 text-sm">
               <li>
                 <Link
                   to="/"
-                  className="text-slate-300 transition-colors hover:text-white"
+                  className="m-underline inline-block cursor-pointer text-slate-600 transition-colors hover:text-[#1B1464]"
                 >
                   Home
                 </Link>
@@ -45,7 +51,7 @@ export const Footer: React.FC = () => {
               <li>
                 <Link
                   to="/overview"
-                  className="text-slate-300 transition-colors hover:text-white"
+                  className="m-underline inline-block cursor-pointer text-slate-600 transition-colors hover:text-[#1B1464]"
                 >
                   Vision, Mission &amp; Values
                 </Link>
@@ -53,7 +59,7 @@ export const Footer: React.FC = () => {
               <li>
                 <Link
                   to="/divisions"
-                  className="text-slate-300 transition-colors hover:text-white"
+                  className="m-underline inline-block cursor-pointer text-slate-600 transition-colors hover:text-[#1B1464]"
                 >
                   Business Divisions
                 </Link>
@@ -61,7 +67,7 @@ export const Footer: React.FC = () => {
               <li>
                 <Link
                   to="/shareholding"
-                  className="text-slate-300 transition-colors hover:text-white"
+                  className="m-underline inline-block cursor-pointer text-slate-600 transition-colors hover:text-[#1B1464]"
                 >
                   Cooperative Shareholding
                 </Link>
@@ -69,7 +75,7 @@ export const Footer: React.FC = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="text-slate-300 transition-colors hover:text-white"
+                  className="m-underline inline-block cursor-pointer text-slate-600 transition-colors hover:text-[#1B1464]"
                 >
                   Contact &amp; Offices
                 </Link>
@@ -79,19 +85,19 @@ export const Footer: React.FC = () => {
 
           {/* Offices & Direct Contact */}
           <div className="md:col-span-4">
-            <h3 className="font-display text-sm font-bold text-white">
+            <h3 className="font-display text-sm font-bold text-[#1B1464]">
               Offices &amp; Direct Line
             </h3>
             <div className="mt-3 space-y-2.5 text-sm">
               {COMPANY_INFO.contacts.offices.map((office) => (
-                <p key={office.label} className="leading-relaxed text-slate-300">
-                  <span className="font-semibold text-white">
+                <p key={office.label} className="leading-relaxed text-slate-600">
+                  <span className="font-semibold text-[#1B1464]">
                     {office.label}:{' '}
                   </span>
                   {office.address}
                 </p>
               ))}
-              <p className="pt-1 tabular-nums text-white">
+              <p className="pt-1 font-semibold tabular-nums text-[#1B1464]">
                 Tel: {COMPANY_INFO.contacts.phone} ·{' '}
                 {COMPANY_INFO.contacts.emails[0]}
               </p>
@@ -99,7 +105,7 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-start justify-between gap-4 pt-6 text-xs text-slate-400 sm:flex-row sm:items-center">
+        <div className="flex flex-col items-start justify-between gap-4 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center">
           <p>
             © {currentYear} {COMPANY_INFO.groupName} / Sourceways Nigeria. All rights reserved.
           </p>
@@ -107,7 +113,7 @@ export const Footer: React.FC = () => {
           <button
             type="button"
             onClick={handleScrollTop}
-            className="inline-flex min-h-[36px] items-center gap-1.5 rounded-md border border-white/15 px-3 py-1.5 text-xs font-medium text-white transition-colors hover:bg-white/10"
+            className="m-btn inline-flex min-h-[38px] items-center gap-1.5 rounded-xl border border-[#1B1464]/15 bg-white/85 px-3.5 py-1.5 text-xs font-semibold text-[#1B1464] hover:border-[#1B1464]/35 hover:bg-white focus-visible:outline-2 focus-visible:outline-[#1B1464]"
           >
             <span>Back to top</span>
             <ArrowUp className="h-3.5 w-3.5" aria-hidden="true" />
