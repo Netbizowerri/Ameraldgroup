@@ -1,0 +1,37 @@
+# Amerald Group & Sourceways Nigeria — Robots & AI Crawler Policy
+# Active Domain: https://ameraldgroup.vercel.app
+# Live Production Domain Target: https://www.ameraldgroup.com.ng
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /dist/
+Disallow: /node_modules/
+
+# Major Search Engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# AI Search & Generative Engine Citation Crawlers (GEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://ameraldgroup.vercel.app/sitemap.xml

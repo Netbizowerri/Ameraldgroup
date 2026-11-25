@@ -61,7 +61,7 @@ export const DivisionsShowcase: React.FC<DivisionsShowcaseProps> = ({
         </div>
 
         {/* Active Division Panel */}
-        <div className="pattern-white-panel mt-8 rounded-2xl border border-slate-200 p-6 sm:p-8 lg:p-10">
+        <article className="pattern-white-panel mt-8 rounded-2xl border border-slate-200 p-6 sm:p-8 lg:p-10">
           {/* Top Overview Split */}
           <div className="grid grid-cols-1 items-stretch gap-8 border-b border-slate-200 pb-8 lg:grid-cols-12">
             <div className="flex flex-col justify-between lg:col-span-7">
@@ -164,7 +164,7 @@ export const DivisionsShowcase: React.FC<DivisionsShowcaseProps> = ({
               </div>
             </div>
           )}
-        </div>
+        </article>
       </div>
     </section>
   );

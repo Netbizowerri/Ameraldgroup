@@ -2,6 +2,12 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { ContactSection } from '../components/ContactSection';
 import { PageHeader } from '../components/PageHeader';
+import { SeoHead } from '../components/SeoHead';
+import {
+  ROUTE_SEO,
+  buildBreadcrumbSchema,
+  buildContactPageSchema,
+} from '../config/seoConfig';
 import { InquiryType } from '../data/ameraldData';
 
 interface ContactLocationState {
@@ -15,6 +21,17 @@ export const ContactPage: React.FC = () => {
 
   return (
     <>
+      <SeoHead
+        {...ROUTE_SEO.contact}
+        structuredData={[
+          buildBreadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'Contact', path: '/contact' },
+          ]),
+          buildContactPageSchema(),
+        ]}
+      />
+
       <PageHeader
         kicker="Inquiries & Office Locations"
         title="Contact Amerald Group & Sourceways"

@@ -1,10 +1,29 @@
 import React from 'react';
 import { PageHeader } from '../components/PageHeader';
+import { SeoHead } from '../components/SeoHead';
 import { ShareholdingSection } from '../components/ShareholdingSection';
+import {
+  ROUTE_SEO,
+  buildBreadcrumbSchema,
+  buildShareholdingFaqSchema,
+  buildShareholdingHowToSchema,
+} from '../config/seoConfig';
 
 export const ShareholdingPage: React.FC = () => {
   return (
     <>
+      <SeoHead
+        {...ROUTE_SEO.shareholding}
+        structuredData={[
+          buildBreadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'Shareholding', path: '/shareholding' },
+          ]),
+          buildShareholdingHowToSchema(),
+          buildShareholdingFaqSchema(),
+        ]}
+      />
+
       <PageHeader
         kicker="Sourceways Cooperative"
         title="Shareholding & Part Ownership"

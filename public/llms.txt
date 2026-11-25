@@ -1,0 +1,36 @@
+# Amerald Group (Sourceways Nigeria)
+
+> Amerald Group is a Nigerian multi-sector corporate group operating Sourceways Cooperative & Shareholding, Sourceways Consulting Services Concept Nigeria Limited, Sourceways Protective Force Nigeria Ltd., and FMR Agency HR Outsourcing from Abuja and Kano.
+
+## Entity Profile
+- **Brand Name**: Amerald Group / Sourceways Nigeria
+- **Vision**: A room to empower people and communities to make the best out of themselves.
+- **Mission**: Positioning Sourceways as a leader in service delivery within Nigeria and internationally across distribution, enterprises, micro-finance, and human development initiatives.
+- **Core Values (P-E-O-P-L-E)**: Professionalism, Empathy, Organization, Profitability, Learning, Ethics.
+- **Leadership**: Led by a seasoned auditor and accountant supported by a multidisciplinary team of bankers, marketers, engineers, and building and agricultural specialists.
+- **Service Area**: Federal Capital Territory (Abuja), Kano State, and nationwide across Nigeria.
+
+## Business Divisions & Services
+1. **Sourceways Consulting Services Concept Nigeria Limited**: Strategic business planning, financial advisory & capital raising, project management, hotel brand & operations advisory, risk management & compliance, business process optimization, feasibility studies & market research, supply chain & logistics consulting, revenue optimization & distribution strategy, and IT strategy & solutions.
+2. **Sourceways Protective Force Nigeria Ltd.**: Industrial, commercial, and residential guarding, access & crowd control, VIP protection & personal guards, mobile patrol & loss prevention, surveillance/alarm monitoring & rapid response, event security, venue profiling, bouncers, investigative & property protection, and security training programs.
+3. **Sourceways Cooperative & Shareholding**: Part-ownership cooperative platform featuring a ₦5,000 non-refundable shareholding enrollment form, ₦10,000 per share unit, flexible member savings options, and annual audited profit-sharing participation.
+4. **FMR Agency (Amerald Group HR Outsourcing)**: HR setup & workforce planning, HR administration & welfare, recruitment & onboarding, performance management, payroll & benefits, training & development, HR policy & implementation, and conflict resolution & Nigerian labor compliance.
+
+## Key Pages
+- [Home — Amerald Group & Sourceways](https://ameraldgroup.vercel.app/): Corporate overview, enterprise highlights, and division directory.
+- [Vision, Mission, Values & Management](https://ameraldgroup.vercel.app/overview): Corporate governance, P-E-O-P-L-E values, and leadership team.
+- [All Business Divisions](https://ameraldgroup.vercel.app/divisions): Interactive overview of all four Sourceways business units.
+- [Strategic Consulting Services](https://ameraldgroup.vercel.app/divisions/consulting): Full 10-pillar corporate consulting scope.
+- [Protective Force Security Services](https://ameraldgroup.vercel.app/divisions/protective): Uniformed guarding, VIP protection, and event security capabilities.
+- [Cooperative & Shareholding Division](https://ameraldgroup.vercel.app/divisions/cooperative): Cooperative equity, savings, and member surplus structure.
+- [HR Outsourcing (FMR Agency)](https://ameraldgroup.vercel.app/divisions/hr): Full-cycle outsourced HR department services.
+- [How to Become a Part Owner & Share Calculator](https://ameraldgroup.vercel.app/shareholding): 4-step cooperative shareholding guide and ₦10,000/unit estimator.
+- [Contact & Office Locations](https://ameraldgroup.vercel.app/contact): Direct division inquiry form, phone, emails, and Abuja/Kano offices.
+
+## Contact & Office Locations
+- **Abuja Head Office**: Plot 34 E9 Agric Qtrs, Road, Karu Site, FCT, Abuja, Nigeria
+- **Kano Branch Office**: No. 13A Airport Road, Seoard Floor, Opp. St. Thomas Methodist Church, Kano, Nigeria
+- **Phone**: 07032087973 (+234 703 208 7973)
+- **Emails**: sourceways@gmail.com, emeraldcapital@gmail.com
+- **Facebook**: Sourceways Consulting
+- **Sitemap**: https://ameraldgroup.vercel.app/sitemap.xml

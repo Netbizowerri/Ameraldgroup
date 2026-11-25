@@ -2,11 +2,28 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { PageHeader } from '../components/PageHeader';
+import { SeoHead } from '../components/SeoHead';
 import { VisionValuesSection } from '../components/VisionValuesSection';
+import {
+  ROUTE_SEO,
+  buildAboutPageSchema,
+  buildBreadcrumbSchema,
+} from '../config/seoConfig';
 
 export const OverviewPage: React.FC = () => {
   return (
     <>
+      <SeoHead
+        {...ROUTE_SEO.overview}
+        structuredData={[
+          buildBreadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'Overview', path: '/overview' },
+          ]),
+          buildAboutPageSchema(),
+        ]}
+      />
+
       <PageHeader
         kicker="Corporate Governance"
         title="Vision, Mission, Core Values & Management"

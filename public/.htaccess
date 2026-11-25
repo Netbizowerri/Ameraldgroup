@@ -1,0 +1,32 @@
+# Apache / cPanel SPA & Technical SEO Routing Rules for Amerald Group
+<IfModule mod_mime.c>
+  AddType application/xml .xml
+  AddType text/plain .txt
+  AddType image/svg+xml .svg
+  AddType image/jpeg .jpg .jpeg
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "^sitemap\.xml$">
+    Header set Content-Type "application/xml; charset=utf-8"
+    Header set Cache-Control "public, max-age=3600"
+  </FilesMatch>
+  <FilesMatch "^(robots|llms)\.txt$">
+    Header set Content-Type "text/plain; charset=utf-8"
+    Header set Cache-Control "public, max-age=3600"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Serve SEO / GEO crawler files and static assets directly without SPA fallback
+  RewriteRule ^(sitemap\.xml|robots\.txt|llms\.txt|og-image\.jpg|favicon\.svg)$ - [L]
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Fallback all other routes to React Router BrowserRouter entry point
+  RewriteRule ^ index.html [L]
+</IfModule>

@@ -24,7 +24,7 @@ export const VisionValuesSection: React.FC = () => {
 
         {/* Vision & Mission Two-Column Architectural Blocks */}
         <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-2">
-          <div className="pattern-white-panel rounded-xl border border-slate-200 p-6 sm:p-8">
+          <article className="pattern-white-panel rounded-xl border border-slate-200 p-6 sm:p-8">
             <p className="text-xs font-semibold tracking-wide text-[#D92B2B]">
               01 · Our Vision
             </p>
@@ -34,9 +34,9 @@ export const VisionValuesSection: React.FC = () => {
             <p className="mt-3 text-sm leading-relaxed text-slate-600">
               Every Sourceways initiative creates practical pathways for members, employees, and business owners to build durable personal and enterprise capacity.
             </p>
-          </div>
+          </article>
 
-          <div className="pattern-white-panel rounded-xl border border-slate-200 p-6 sm:p-8">
+          <article className="pattern-white-panel rounded-xl border border-slate-200 p-6 sm:p-8">
             <p className="text-xs font-semibold tracking-wide text-[#D92B2B]">
               02 · Our Mission
             </p>
@@ -46,7 +46,7 @@ export const VisionValuesSection: React.FC = () => {
             <p className="mt-3 text-sm leading-relaxed text-slate-600">
               Operating across Abuja, Kano, and international corridors with transparent accounting controls and verifiable service delivery.
             </p>
-          </div>
+          </article>
         </div>
 
         {/* Core Values: P-E-O-P-L-E */}
@@ -67,7 +67,7 @@ export const VisionValuesSection: React.FC = () => {
 
           <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {CORE_VALUES.map((item) => (
-              <div
+              <article
                 key={item.number}
                 className="flex flex-col justify-between rounded-xl border border-slate-200/90 bg-white/95 p-6 transition-colors duration-150 hover:border-[#1B1464]/40 hover:bg-white"
               >
@@ -87,7 +87,7 @@ export const VisionValuesSection: React.FC = () => {
                     {item.description}
                   </p>
                 </div>
-              </div>
+              </article>
             ))}
           </div>
         </div>

@@ -3,11 +3,20 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { HeroSection } from '../components/HeroSection';
 import { ImageWithFallback } from '../components/ImageWithFallback';
+import { SeoHead } from '../components/SeoHead';
+import {
+  ROUTE_SEO,
+  buildHomeDivisionsListSchema,
+} from '../config/seoConfig';
 import { COMPANY_INFO, DIVISIONS } from '../data/ameraldData';
 
 export const HomePage: React.FC = () => {
   return (
     <>
+      <SeoHead
+        {...ROUTE_SEO.home}
+        structuredData={buildHomeDivisionsListSchema()}
+      />
       <HeroSection />
 
       {/* Business Divisions Directory */}
@@ -40,43 +49,44 @@ export const HomePage: React.FC = () => {
 
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
             {DIVISIONS.map((division, idx) => (
-              <Link
-                key={division.id}
-                to={`/divisions/${division.id}`}
-                className="group flex flex-col overflow-hidden rounded-xl border border-slate-200/90 bg-white/95 shadow-xs transition-all duration-150 hover:border-[#1B1464]/45 hover:bg-white hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1B1464]"
-              >
-                <div className="aspect-[16/9] overflow-hidden border-b border-slate-200 bg-slate-100">
-                  <ImageWithFallback
-                    src={division.image}
-                    alt={division.imageAlt}
-                    title={division.entityName}
-                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
-                  />
-                </div>
-                <div className="flex flex-1 flex-col justify-between p-6">
-                  <div>
-                    <div className="flex items-center justify-between gap-2 text-xs font-medium text-slate-500">
-                      <span className="font-semibold text-[#D92B2B]">
-                        0{idx + 1}. {division.tabLabel}
-                      </span>
-                      <span className="tabular-nums">
-                        {division.services.length} Services
-                      </span>
+              <article key={division.id} className="flex">
+                <Link
+                  to={`/divisions/${division.id}`}
+                  className="group flex flex-1 flex-col overflow-hidden rounded-xl border border-slate-200/90 bg-white/95 shadow-xs transition-all duration-150 hover:border-[#1B1464]/45 hover:bg-white hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1B1464]"
+                >
+                  <div className="aspect-[16/9] overflow-hidden border-b border-slate-200 bg-slate-100">
+                    <ImageWithFallback
+                      src={division.image}
+                      alt={division.imageAlt}
+                      title={division.entityName}
+                      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                    />
+                  </div>
+                  <div className="flex flex-1 flex-col justify-between p-6">
+                    <div>
+                      <div className="flex items-center justify-between gap-2 text-xs font-medium text-slate-500">
+                        <span className="font-semibold text-[#D92B2B]">
+                          0{idx + 1}. {division.tabLabel}
+                        </span>
+                        <span className="tabular-nums">
+                          {division.services.length} Services
+                        </span>
+                      </div>
+                      <h3 className="mt-2 font-display text-xl font-bold text-[#1B1464]">
+                        {division.entityName}
+                      </h3>
+                      <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                        {division.description}
+                      </p>
                     </div>
-                    <h3 className="mt-2 font-display text-xl font-bold text-[#1B1464]">
-                      {division.entityName}
-                    </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                      {division.description}
-                    </p>
-                  </div>
 
-                  <div className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-[#1B1464] group-hover:text-[#D92B2B]">
-                    <span>Open division details</span>
-                    <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+                    <div className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-[#1B1464] group-hover:text-[#D92B2B]">
+                      <span>Open division details</span>
+                      <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+                    </div>
                   </div>
-                </div>
-              </Link>
+                </Link>
+              </article>
             ))}
           </div>
         </div>
