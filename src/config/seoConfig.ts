@@ -28,7 +28,15 @@ export interface RouteSeoMeta {
 }
 
 export const ROUTE_SEO: Record<
-  'home' | 'overview' | 'divisionsIndex' | 'shareholding' | 'contact' | 'notFound',
+  | 'home'
+  | 'overview'
+  | 'divisionsIndex'
+  | 'shareholding'
+  | 'contact'
+  | 'privacyPolicy'
+  | 'termsOfUse'
+  | 'disclaimer'
+  | 'notFound',
   RouteSeoMeta
 > = {
   home: {
@@ -60,6 +68,24 @@ export const ROUTE_SEO: Record<
     description:
       'Contact Amerald Group and Sourceways in Abuja (Karu Site) or Kano (Airport Road) for cooperative shareholding, consulting, security, or HR inquiries.',
     canonicalPath: '/contact',
+  },
+  privacyPolicy: {
+    title: 'Privacy Policy (NDPA 2023) | Amerald Group Nigeria',
+    description:
+      'Read how Amerald Group and Sourceways Nigeria collect, protect, and process inquiry data under the Nigeria Data Protection Act (NDPA) 2023 and NDPC rules.',
+    canonicalPath: '/privacy-policy',
+  },
+  termsOfUse: {
+    title: 'Terms of Website Use | Amerald Group & Sourceways NG',
+    description:
+      'Review the Terms of Use governing the Amerald Group and Sourceways Nigeria website, division engagements, intellectual property, and Nigerian law.',
+    canonicalPath: '/terms-of-use',
+  },
+  disclaimer: {
+    title: 'Cooperative & Regulatory Disclaimer | Amerald Group',
+    description:
+      'Important disclosures on Sourceways Cooperative ₦10,000 share units, ₦5,000 non-refundable form fee, advisory scope, security licensing, and fraud safety.',
+    canonicalPath: '/disclaimer',
   },
   notFound: {
     title: 'Page Not Found (404) | Amerald Group & Sourceways',
@@ -242,6 +268,27 @@ export function buildContactPageSchema() {
     description:
       'Official contact channels and Abuja and Kano office locations for Amerald Group and Sourceways business divisions.',
     mainEntity: {
+      '@id': `${SITE_URL}/#organization`,
+    },
+  };
+}
+
+export function buildLegalWebPageSchema(
+  name: string,
+  path: string,
+  description: string
+) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name,
+    url: `${SITE_URL}${path}`,
+    description,
+    inLanguage: 'en-NG',
+    isPartOf: {
+      '@id': `${SITE_URL}/#website`,
+    },
+    publisher: {
       '@id': `${SITE_URL}/#organization`,
     },
   };

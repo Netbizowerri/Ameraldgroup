@@ -16,6 +16,9 @@ const SITEMAP_ROUTES = [
   { path: '/divisions/hr', changefreq: 'monthly', priority: '0.8' },
   { path: '/shareholding', changefreq: 'monthly', priority: '0.9' },
   { path: '/contact', changefreq: 'monthly', priority: '0.8' },
+  { path: '/privacy-policy', changefreq: 'yearly', priority: '0.4' },
+  { path: '/terms-of-use', changefreq: 'yearly', priority: '0.4' },
+  { path: '/disclaimer', changefreq: 'yearly', priority: '0.5' },
 ];
 
 export default defineConfig(({ mode }) => {

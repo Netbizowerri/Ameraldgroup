@@ -106,14 +106,45 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="flex flex-col items-start justify-between gap-4 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center">
-          <p>
-            © {currentYear} {COMPANY_INFO.groupName} / Sourceways Nigeria. All rights reserved.
-          </p>
+          <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-4 sm:gap-y-1">
+            <p>
+              © {currentYear} {COMPANY_INFO.groupName} / Sourceways Nigeria. All rights reserved.
+            </p>
+            <nav
+              aria-label="Legal Links"
+              className="flex flex-wrap items-center gap-x-3 gap-y-1 text-slate-600"
+            >
+              <Link
+                to="/privacy-policy"
+                className="m-underline transition-colors hover:text-[#1B1464]"
+              >
+                Privacy Policy
+              </Link>
+              <span aria-hidden="true" className="text-slate-300">
+                ·
+              </span>
+              <Link
+                to="/terms-of-use"
+                className="m-underline transition-colors hover:text-[#1B1464]"
+              >
+                Terms of Use
+              </Link>
+              <span aria-hidden="true" className="text-slate-300">
+                ·
+              </span>
+              <Link
+                to="/disclaimer"
+                className="m-underline transition-colors hover:text-[#1B1464]"
+              >
+                Regulatory &amp; Cooperative Disclaimer
+              </Link>
+            </nav>
+          </div>
 
           <button
             type="button"
             onClick={handleScrollTop}
-            className="m-btn inline-flex min-h-[38px] items-center gap-1.5 rounded-xl border border-[#1B1464]/15 bg-white/85 px-3.5 py-1.5 text-xs font-semibold text-[#1B1464] hover:border-[#1B1464]/35 hover:bg-white focus-visible:outline-2 focus-visible:outline-[#1B1464]"
+            className="m-btn inline-flex min-h-[38px] shrink-0 items-center gap-1.5 rounded-xl border border-[#1B1464]/15 bg-white/85 px-3.5 py-1.5 text-xs font-semibold text-[#1B1464] hover:border-[#1B1464]/35 hover:bg-white focus-visible:outline-2 focus-visible:outline-[#1B1464]"
           >
             <span>Back to top</span>
             <ArrowUp className="h-3.5 w-3.5" aria-hidden="true" />

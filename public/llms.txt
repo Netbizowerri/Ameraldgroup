@@ -27,6 +27,11 @@
 - [How to Become a Part Owner & Share Calculator](https://ameraldgroup.vercel.app/shareholding): 4-step cooperative shareholding guide and ₦10,000/unit estimator.
 - [Contact & Office Locations](https://ameraldgroup.vercel.app/contact): Direct division inquiry form, phone, emails, and Abuja/Kano offices.
 
+## Legal & Nigerian Compliance
+- [Privacy Policy (NDPA 2023)](https://ameraldgroup.vercel.app/privacy-policy): Personal data handling, Formspree processing, cookie notice, and NDPA 2023 / NDPC data subject rights.
+- [Terms of Use](https://ameraldgroup.vercel.app/terms-of-use): Website governance, division contract precedence, intellectual property, Cybercrimes Act compliance, and Nigerian governing law.
+- [Cooperative & Regulatory Disclaimer](https://ameraldgroup.vercel.app/disclaimer): Sourceways Cooperative share unit (₦10,000) & non-refundable form (₦5,000) disclosures, advisory scope, private guard (NSCDC) compliance, and anti-fraud payment verification.
+
 ## Contact & Office Locations
 - **Abuja Head Office**: Plot 34 E9 Agric Qtrs, Road, Karu Site, FCT, Abuja, Nigeria
 - **Kano Branch Office**: No. 13A Airport Road, Seoard Floor, Opp. St. Thomas Methodist Church, Kano, Nigeria

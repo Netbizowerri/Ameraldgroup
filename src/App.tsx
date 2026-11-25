@@ -3,11 +3,14 @@ import { Footer } from './components/Footer';
 import { Navbar } from './components/Navbar';
 import { ScrollToTop } from './components/ScrollToTop';
 import { ContactPage } from './pages/ContactPage';
+import { DisclaimerPage } from './pages/DisclaimerPage';
 import { DivisionsPage } from './pages/DivisionsPage';
 import { HomePage } from './pages/HomePage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { OverviewPage } from './pages/OverviewPage';
+import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
 import { ShareholdingPage } from './pages/ShareholdingPage';
+import { TermsOfUsePage } from './pages/TermsOfUsePage';
 
 export default function App() {
   return (
@@ -31,6 +34,9 @@ export default function App() {
             <Route path="/divisions/:divisionId" element={<DivisionsPage />} />
             <Route path="/shareholding" element={<ShareholdingPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+            <Route path="/terms-of-use" element={<TermsOfUsePage />} />
+            <Route path="/disclaimer" element={<DisclaimerPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>

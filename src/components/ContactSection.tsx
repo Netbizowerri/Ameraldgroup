@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   AlertCircle,
   CheckCircle2,
@@ -571,7 +572,20 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                   </button>
 
                   <p className="text-xs text-slate-500">
-                    Protected form · Zero third-party data resale
+                    Protected under NDPA 2023 ·{' '}
+                    <Link
+                      to="/privacy-policy"
+                      className="font-medium text-[#1B1464] underline decoration-slate-300 underline-offset-2 hover:text-[#D92B2B]"
+                    >
+                      Privacy Policy
+                    </Link>{' '}
+                    &amp;{' '}
+                    <Link
+                      to="/disclaimer"
+                      className="font-medium text-[#1B1464] underline decoration-slate-300 underline-offset-2 hover:text-[#D92B2B]"
+                    >
+                      Disclaimer
+                    </Link>
                   </p>
                 </div>
               </form>
